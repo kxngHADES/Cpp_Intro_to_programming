@@ -1,0 +1,38 @@
+2.2 Algorithm
+
+1. Initialize Program Data
+	a. Define a dictionary of items with their names and prices.
+	b. Set discount threshold to 200.
+	c. Set discount rate to 0.05.
+	d. Initialize cart to store selected items.
+2. Prompt User for Input
+	a. Prompt for username and store it.
+	b. Display a menu of items that can be purchased.
+3. Select item and Quantity
+	a. Repeat until done selecting items (do while loop)
+		I. Ask user to enter the item they want and store it in the carts array
+		ii. If the item isn’t in the list Display error message and move on to the next loop.
+		iii. If the item quantity is not positive display an error
+		iv. Add the item name and quantity to the cart
+		v. Ask if user wants to add another item if yes rerun the loop if no exit the loop
+4. Calculate Total Cost
+	a. Initialize total to zero
+	b. Run a loop through 2 parallel arrays for the item and its quantity.
+	c. Add the item price and the quantity
+5. Apply Discount IF requirement is met
+	a. IF total > discount threshold then
+		I. Calculate discount amount and total * discount rate.
+		ii. Subtract discount amount from total and save as final amount
+	b. ELSE
+		I. Set the final amount to total cost.
+		ii. Sed discount amount to zero
+6. Output Final Bill
+	a. Display a list of items, quantities, and costs.
+	b. Display total cost before discount.
+	c. Display discount amount.
+	d. Display final amount as the total after any discount.
+7. Save Bill to Text File
+	a. Open a file in append mode (ios::app).
+	b. Write the bill to the text file.
+		I. Save the name, items bought, total cost, discount amount and final amount
+	c. Close the file.

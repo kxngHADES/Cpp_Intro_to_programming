@@ -36,3 +36,4 @@
 	b. Write the bill to the text file.
 		I. Save the name, items bought, total cost, discount amount and final amount
 	c. Close the file.
+
